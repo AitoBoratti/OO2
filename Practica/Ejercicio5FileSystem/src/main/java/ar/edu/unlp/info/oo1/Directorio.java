@@ -10,8 +10,7 @@ public class Directorio extends Component{
     private List<Component> contenido;
 
     public Directorio(String nombre, LocalDate fecha) {
-        super(nombre,fecha);
-        this.tamaño = 32;
+        super(nombre,fecha,32);
         contenido = new ArrayList<Component>();
     }
 
@@ -21,14 +20,14 @@ public class Directorio extends Component{
     public LocalDate getFecha() {
         return fecha;
     }
-    public void agregar(Archivo archivo) {
+    public void agregar(Component archivo) {
         this.contenido.add(archivo);
     }
     /**
      * Retorna el espacio total ocupado, incluyendo su contenido.
      */
     public int tamanoTotalOcupado(){
-        return contenido.stream().mapToInt(Comp -> Comp.tamanoTotalOcupado()).sum();
+        return this.tamaño + contenido.stream().mapToInt(Comp -> Comp.tamanoTotalOcupado()).sum();
     }
     /**
      * Retorna el archivo con mayor cantidad de bytes en cualquier nivel del

@@ -7,9 +7,10 @@ public abstract class Component {
     protected LocalDate fecha;
     protected int tamaño;
 
-    public Component(String nombre, LocalDate fecha) {
+    public Component(String nombre, LocalDate fecha, int tamaño) {
         this.nombre = nombre;
         this.fecha = fecha;
+        this.tamaño = tamaño;
     }
     public abstract int tamanoTotalOcupado();
 

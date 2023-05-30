@@ -5,8 +5,7 @@ import java.time.LocalDate;
 public class Archivo extends Component{
 
     public Archivo(String nombre, LocalDate fecha, int tamaño) {
-        super(nombre,fecha);
-        this.tamaño = tamaño;
+        super(nombre,fecha,tamaño);
     }
 
     public String getNombre() {
