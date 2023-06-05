@@ -22,7 +22,7 @@ Para evitarlo: la tarea la debe hacer el objeto que tiene las cosas que se neces
 **Para evitarlo:** Identificar dentro del método largo, partes que podría considerar comportamientos individuales. Llevar cada parte a un nuevo método (con un buen nombre) y cuando necesite llevar a cabo uno de esos comportamientos, enviar mensajes a this.
 
 **• Objetos que conocen el id de otro:** Nunca relacionar objetos por medio de claves o ids!! 
-**Para evitarlo:* Cuando un objeto se relaciona con otro, lo hace con una referencia. Nunca conoce su id (incluso aunque los objetos tengan id).
+**Para evitarlo:** Cuando un objeto se relaciona con otro, lo hace con una referencia. Nunca conoce su id (incluso aunque los objetos tengan id).
 
 **• Eso debería ser un objeto (*obsesión por los primitivos*):** A veces modelamos como strings o números cosas que deberían ser objetos. Cuando hacemos eso, el comportamiento que debería tener ese objeto termina estando en un lugar que no corresponde.
 **Para evitarlo:** Pensar si eso que estoy modelando con un string o número (un primitivo) no debería ser modelado con una clase específica. 
