@@ -19,11 +19,14 @@ public void imprimirValores() {
 			
 }
 ```
-### Code Smells:
-    ** Metodos con demasiadas responsabilidades**
-	** MetodoDemasiadoLargo **
-### Solucion: 
-	Yo crearia dos metodos independientes **promedioEdades()** y **totalSalario()**, dejando al metodo imprimirValores() la unica funcion de imprimir lo que sea necesario, asi solucionando el problema con las responsabilidades y la longitud del metodo.
+###Code Smells:
+    1. **Metodos con demasiadas responsabilidades**
+    2. **Metodo Demasiado Largo**
+	
+###Solucion: 
+    Yo crearia dos metodos independientes **promedioEdades()** y **totalSalario()**, dejando al metodo imprimirValores() 
+	la unica funcion de imprimir lo que sea necesario, asi solucionando el problema con las responsabilidades y 
+	la longitud del metodo.
 
 ```java
 public double promedioEdades(){
