@@ -1,5 +1,6 @@
 # Criterios y heurísticas de diseño (versión 0.2 - Java)
 El objetivo de este documento es ayudarnos a evaluar críticamente y en detalle nuestros diseños y programas orientados a objetos, en términos de los conceptos vistos en Orientación a Objetos 1. Podemos utilizarlo como un checklist cada vez que resolvemos un ejercicio, cuando ayudamos a un compañero a analizar sus programas, o incluso cuando nos preparamos para un exámen. 
+
 **Nota:** Esta lista es una guía pero no es exhaustiva. Posiblemente otras buenas prácticas y conceptos de programación orientada a objetos no están listados aquí.
 
 No todos los ítems nos van a sonar claros al principio. Los iremos encontrando y entendiendo gradualmente. Ante la duda, preguntamos. 
