@@ -25,6 +25,9 @@ public class Jugador {
 }
 ```
 ---
+## Solucion 
+<br>
+
 **Code Smells:** Envidia de atributos
 
 **Refactoring para solucionarlo**: Se puede aplicar la tecnica de **Move Methods**.

@@ -49,7 +49,9 @@ public class EmpleadoPasante {
 }
 ```
 ---
-## Primer revision
+## Solucion
+<br>
+
 **Code Smells:** Codigo Duplicado
 
 **Refactoring para solucionarlo**: Se puede aplicar la tecnica de Extract Superclass
@@ -103,7 +105,6 @@ public class EmpleadoPasante extends Empleado{
 }
 
 ```
-## Segunda revision
 
 **Code Smell**: Romper encapsulamiento.
 
