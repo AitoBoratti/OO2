@@ -189,4 +189,55 @@ public abstract class Empleado {
 
     public abstract double sueldo();
 }
+
+public class EmpleadoTemporario extends Empleado{
+    private double horasTrabajadas = 0;
+    private int cantidadHijos = 0;
+    // ......
+    public EmpleadoTemporario(String nombre, String apellido, Double sueldoBasico, Double horasTrabajadas, int cantidadHijos){
+            Super(nombre,apellido,sueldoBasico);
+            this.horasTrabajadas = horasTrabajadas;
+            this.cantidadHijos = cantidadHijos;
+    }
+
+    public double getHorasTrabajadas(){ return this.horasTrabajadas;}
+    public int getCantidadHijos(){ return this.cantidadHijos;}
+
+    @Override
+    public double sueldo() {
+        return this.getSueldoBasico()
+            (this.getHorasTrabajadas() * 500) 
+            (this.getCantidadHijos() * 1000) 
+            (this.getSueldoBasico() * 0.13);
+    }
+}
+
+public class EmpleadoPlanta extends Empleado{
+    private int cantidadHijos = 0;
+    // ......
+    public EmpleadoPlanta(String nombre, String apellido, Double sueldoBasico, Double cantidadHijos){
+            Super(nombre,apellido,sueldoBasico);
+            this.cantidadHijos = cantidadHijos;
+    }
+
+    public int getCantidadHijos(){ return this.cantidadHijos;}
+    
+    @Override
+    public double sueldo() {
+        return this.getSueldoBasico() 
+            + (this.getCantidadHijos() * 2000)
+            - (this.getSueldoBasico() * 0.13);
+    }
+}
+
+public class EmpleadoPasante extends Empleado{
+    // ......
+    public EmpleadoPasante(String nombre, String apellido, Double sueldoBasico){
+            Super(nombre,apellido,sueldoBasico);
+    }
+    @Override
+    public double sueldo() {
+        return this.getSueldoBasico() - (this.getSueldoBasico() * 0.13);
+    }
+}
 ```
