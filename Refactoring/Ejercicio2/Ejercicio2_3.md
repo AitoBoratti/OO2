@@ -8,7 +8,7 @@ Si vuelve a encontrar un mal olor, retorne al paso 1.
 
 #### UML Proporcionado
 
-<img src="img/UML_2.3.png" width="60%"></center>
+<img src="img/UML_2.3.png" width="70%"></center>
 
 ```Java 
 /**
