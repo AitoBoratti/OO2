@@ -7,6 +7,7 @@
 Si vuelve a encontrar un mal olor, retorne al paso 1.
 
 
+**Codigo Proporcionado**
 ``` java
 public class Juego {
     // ......
@@ -28,7 +29,7 @@ public class Jugador {
 ## Solucion 
 <br>
 
-**Code Smells:** Envidia de atributos
+**Code Smells:** Envidia de atributos.
 
 **Refactoring para solucionarlo**: Se puede aplicar la tecnica de **Move Methods**.
    1. Si claramente se debe mover un método a otro lugar, use Move Method.

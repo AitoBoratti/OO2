@@ -6,6 +6,7 @@
 
 Si vuelve a encontrar un mal olor, retorne al paso 1.
 
+**Codigo Proporcionado**
 ``` Java
 public class EmpleadoTemporario {
     public String nombre;
